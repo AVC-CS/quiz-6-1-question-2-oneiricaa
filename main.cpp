@@ -10,6 +10,6 @@ int main()
     empN = writeFile(filename);
     cout << "File created with " << empN << " employee records\n";
 
-    empN = readFile(filename);
-    cout << "The total number of employess read " << empN << endl;
+    // empN = readFile(filename);
+    // cout << "The total number of employess read " << empN << endl;
 }

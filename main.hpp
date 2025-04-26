@@ -45,25 +45,26 @@ int readFile(string filename)
         exit(0);
     }
 
-    int N;
+    int empN;
     int ID;
     string EMP, DEP;
     double SAL;
     double sum, avg;
     
-    ifs >> N;
+    ifs >> empN;
     
     cout << "ID" << "\t" << "Name" << "\t" << "Department" << "\t" << "Salary" << endl;
 
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < empN; i++)
     {
         ifs >> ID >> EMP >> DEP >> SAL;
         cout << ID << "\t" << EMP << "\t" << DEP << "\t" << SAL << endl;
         sum += SAL;
     }
     
-    avg = sum / N;
+    avg = sum / empN;
 
     cout << "Total: " << sum << "\t" << "Average: "<< avg << endl;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+    return empN;                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 }
