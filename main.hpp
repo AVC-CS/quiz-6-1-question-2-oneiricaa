@@ -22,7 +22,7 @@ int writeFile(string filename)
     string EMP, DEP;
     double SAL;
 
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < empN; i++)
     {
         cout << i+1 << ". Enter Employee ID, Employee Name, Department Name, and Salary: \t";
         cin >> ID >> EMP >> DEP >> SAL;
